@@ -12,10 +12,20 @@
 
     //Entrada
 
+    const custoTotal = Number(prompt("informe o valor total da viagem"));
+    
+    let parcelas;
 
     //Processamento
+    (custoTotal <= 500) ? parcelas = custoTotal
+    : (custoTotal <= 1000) ? parcelas = custoTotal / 2
+        : (custoTotal<=1500) ? parcelas = custoTotal / 4
+            : parcelas = custoTotal /10
+
+
+
 
 
     //Saída
-
+    document.write(parcelas)
 </script>

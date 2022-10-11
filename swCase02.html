@@ -10,8 +10,24 @@
 
     //Entrada
 
+    const assunto = prompt("qual o assunto mais difícil da diciplina (VO)|(ED)|(RE)").toLocaleUpperCase()
 
     //Processamento
+
+    switch (assunto) {
+        case "VO":
+            document.write("Primeiro");
+            break;
+        case "ED":
+            document.write("Segundo");
+            break;
+        case "RE":
+            document.write("Terceiro")
+            break;
+        default:
+            alert("Valor invalido tente informar (VO|ED|RE)")
+            break;
+    }
 
 
     //Saída

@@ -11,10 +11,27 @@
     */
 
     //Entrada
-
+const cdNascimento = prompt("informe o seu local de nascimento (JL)|(SF)|(AR)|(BS)").toLocaleUpperCase()
 
     //Processamento
 
+    switch (cdNascimento) {
+        case "JL":
+            document.write("Urbano");
+            break;
+        case "SF":
+            document.write("Praia");
+            break;
+        case "AR":
+            document.write("Metrópole")
+            break;
+        case "BS":
+            document.write("Praia")
+            break;
+        default:
+            alert("Local invalido tente informar (JL|SF|AR|BS)")
+            break;
+    }
 
     //Saída
 
